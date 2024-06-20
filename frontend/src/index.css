@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+ 
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth !important;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #3e92cc; /* Adjusted primary color */
+  --secondary-color: #0769ad; /* Adjusted secondary color */
+  --accent-color: #0769ad;
+  --accent-light-color: #0769ad;
+  --background-color: #2e2c32;
+}
+
+/* Background color classes */
+.bg-primarys {
+  background-color: var(--primary-color);
+}
+
+.bg-secondarys {
+  background-color: var(--secondary-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+.bg-accent-light {
+  background-color: var(--accent-light-color);
+}
+
+.bg-background {
+  background-color: var(--background-color);
+}
+
+/* Text color classes */
+.text-primarys {
+  color: var(--primary-color);
+}
+
+.text-secondarys {
+  color: var(--secondary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-accent-light {
+  color: var(--accent-light-color);
+}
+
+.text-background {
+  color: var(--background-color);
+}

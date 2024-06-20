@@ -1,0 +1,82 @@
+/* Basic navbar styles */
+.navbar-toggler {
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--background-color);
+}
+
+.logo {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-m {
+    width: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-link:hover {}
+
+/* Collapse transition */
+.collapse {
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    height: 0;
+    display: block;
+    /* To ensure display:block is retained */
+}
+
+/* Slide animations */
+@keyframes slide-down {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 230px;
+        /* To be calculated dynamically */
+    }
+}
+
+@keyframes slide-up {
+    from {
+        height: var(--content-height);
+        /* To be calculated dynamically */
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+.collapse.slide-down {
+    animation: slide-down 0.3s forwards;
+    --content-height: 200px;
+    /* Adjust as necessary */
+}
+
+.collapse.slide-up {
+    animation: slide-up 0.3s forwards;
+    --content-height: 200px;
+    /* Adjust as necessary */
+}
+
+/* Additional state for animation control */
+.collapse.animating {
+    display: block;
+    overflow: hidden;
+    height: auto;
+}
+
+.nav-hover:hover {
+}
+.nav-hover:active{
+    color: rgb(87, 60, 28) !important;
+}
