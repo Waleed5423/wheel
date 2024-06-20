@@ -46,7 +46,7 @@ const App = () => {
   }, [isAuthenticated]);
 
   return (
-    <>blah 
+    <>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

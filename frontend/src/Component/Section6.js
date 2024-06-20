@@ -64,7 +64,7 @@ const Section6 = ({}) => {
         <motion.div className="col-md-6 ps-3" variants={itemVariants}>
           <h4 className="mt-md-5 mt-4 fw-bolder text-accent">ASK A QUERY</h4>
           <h2 className="font-weight-bold fw-bolder fs-1">
-            Need an Assistance? Please Feel Free to Contact Us.qsw
+            Need an Assistance? Please Feel Free to Contact Us
           </h2>
           <hr className="blue-lines w-25" />
           <div className="row my-2">
