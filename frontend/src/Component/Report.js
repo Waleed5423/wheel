@@ -124,7 +124,7 @@ const Report = () => {
               type="text"
               id="name"
               name="name"
-              className={`form-control border border-1 border-dark ${
+              className={`form-control  border border-1 border-dark ${
                 errors.name ? "is-invalid" : ""
               }`}
               value={formData.name}
@@ -144,7 +144,7 @@ const Report = () => {
               type="email"
               id="email"
               name="email"
-              className={`form-control border border-1 border-dark ${
+              className={`form-control  border border-1 border-dark ${
                 errors.email ? "is-invalid" : ""
               }`}
               value={formData.email}
@@ -164,7 +164,7 @@ const Report = () => {
               type="tel"
               id="phoneNumber"
               name="phoneNumber"
-              className={`form-control border border-1 border-dark ${
+              className={`form-control  border border-1 border-dark ${
                 errors.phoneNumber ? "is-invalid" : ""
               }`}
               value={formData.phoneNumber}
@@ -196,24 +196,26 @@ const Report = () => {
                 <div className="modal-body">
                   <p>
                     Total Amount to Pay:{" "}
-                    <strong className="fs-5 font-monospace">$36.69</strong>
+                    <strong className="fs-5 font-monospace">$36.69</strong>{" "}
                   </p>
                   <p>
                     Please proceed with the payment using the following
                     PayPal.me link:
                     <br />
                     <a
-                      href="https://www.paypal.me/graphicdesigner765/36.69"
+                      href="https://www.paypal.me/graphicdesigner765"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <button className="btn btn-primary mt-3 w-50">
-                        Pay with PayPal
+                        Pay with Paypal
                       </button>
                     </a>
                     <p className="mt-4">
-                      After payment, please allow 24-48 hours for the payment to
-                      be processed.
+                      After payment! Please allow 24 hours for the payment to be
+                      processed. <br />
+                      <br />
+                      Report will be shared shortly !
                     </p>
                   </p>
                 </div>

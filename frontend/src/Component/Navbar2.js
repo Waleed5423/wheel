@@ -31,7 +31,7 @@ const Navbar2 = () => {
   return (
     <>
       <div className="div bg-dark text-light font-monospace text-center py-1">
-        Email@email.com
+      Wheelspectrapro@gmail.com
       </div>
 
       <nav className="navbar navbar-expand-lg d-none d-md-block bg-secondarys">

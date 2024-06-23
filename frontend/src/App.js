@@ -21,29 +21,26 @@ const ProtectedRoute = ({ isAuthenticated, children }) => {
 };
 
 const App = () => {
-  // State to manage authentication status
+  
   const [isAuthenticated, setIsAuthenticated] = useState(
     localStorage.getItem("isAuthenticated") === "true"
   );
 
-  // Handle login and set authentication status
   const handleLogin = () => {
     setIsAuthenticated(true);
     localStorage.setItem("isAuthenticated", "true");
   };
 
-  // Handle logout and clear authentication status
   const handleLogout = () => {
     setIsAuthenticated(false);
     localStorage.removeItem("isAuthenticated");
   };
 
-  // Redirect to login if not authenticated on initial load
-  useEffect(() => {
-    if (!isAuthenticated && window.location.pathname !== "/AdminLogin") {
-      window.location.href = "/AdminLogin";
-    }
-  }, [isAuthenticated]);
+  // useEffect(() => {
+  //   if (!isAuthenticated && window.location.pathname !== "/AdminLogin") {
+  //     window.location.href = "/";
+  //   }
+  // }, [isAuthenticated]);
 
   return (
     <>

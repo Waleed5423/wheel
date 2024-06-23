@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
+import img3 from "../media/c.jpeg";
 import "./Section.css";
 
 const Section4 = ({}) => {
@@ -92,11 +93,7 @@ const Section4 = ({}) => {
           className="col-md-5 d-flex justify-content-center align-items-center"
           variants={childVariants}
         >
-          <img
-            src="https://th.bing.com/th/id/OIP.k8SOJEKv9POU8OL9xLUPjgAAAA?rs=1&pid=ImgDetMain"
-            className="img-fluid"
-            alt="Business meeting"
-          />
+          <img src={img3} className="img-fluid" alt="Business meeting" />
         </motion.div>
       </motion.div>
     </motion.section>
